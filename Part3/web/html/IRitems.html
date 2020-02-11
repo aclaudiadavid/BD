@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Inserir Itens</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Iitem.php" method="post">
+        <p>Id <span style="color:red">*</span></p>
+        <input type="integer" name="id" required/>
+        <p>Latitude <span style="color:red">*</span></p>
+        <input type="float" name="lat" required/>
+        <p>Longitude <span style="color:red">*</span></p>
+        <input type="float" name="long" required/>
+        <p>Descrição</p>
+        <input type="text" name="desc">
+        <p>Localização</p>
+        <input type="text" name="loc"><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Remover Itens</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ritem.php" method="post">
+            <p>Id <span style="color:red">*</span></p>
+            <input type="float" name="id"><br><br>
+        <button type="submit">Remover</button>
+    </form>
+</body>

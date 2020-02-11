@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Inserir Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Icorre.php" method="post">
+        <p>Email <span style="color:red">*</span></p>
+        <input type="text" name="email" required/>
+        <p>nro <span style="color:red">*</span></p>
+        <input type="integer" name="nro" required/>
+        <p>Id Anomalia <span style="color:red">*</span></p>
+        <input type="integer" name="id" required><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Editar Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ecorre.php" method="post">
+        <table>
+            <td>
+                <h5>Proposta Correcao</h5>
+                <p>Email <span style="color:red">*</span></p>
+                <input type="text" name="email" required/>
+                <p>nro <span style="color:red">*</span></p>
+                <input type="integer" name="nro" required/>
+                <p>Id Anomalia <span style="color:red">*</span></p>
+                <input type="integer" name="id" required><br><br>
+                <button type="submit">Inserir</button>
+            </td>
+            <td>
+                <h5>Novos valores</h5>
+                <p>nro</p>
+                <input type="integer" name="nronovo"/>
+                <p>Id Anomalia</p>
+                <input type="integer" name="idnovo"><br><br>
+            </td>
+        </table>
+    </form>
+
+    <h1>Remover Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Rcorre.php" method="post">
+        <p>Email <span style="color:red">*</span></p>
+        <input type="text" name="email" required/>
+        <p>nro <span style="color:red">*</span></p>
+        <input type="integer" name="nro" required/>
+        <p>Id Anomalia <span style="color:red">*</span></p>
+        <input type="integer" name="id" required><br><br>
+        <button type="submit">Remover</button>
+    </form>
+</body>

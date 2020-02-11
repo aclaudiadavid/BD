@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Registar Incidencia</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Rincid.php" method="post">
+        <p>Id Anomalia <span style="color:red">*</span></p>
+        <input type="integer" name="anom" required/>
+        <p>Id Item <span style="color:red">*</span></p>
+        <input type="integer" name="item" required/>
+        <p>Email <span style="color:red">*</span></p>
+        <input type="text" name="email" required><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+</body>

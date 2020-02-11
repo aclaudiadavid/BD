@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Inserir Locais</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ilocal.php" method="post">
+        <p>Latitude <span style="color:red">*</span></p>
+        <input type="float" name="lat" required/>
+        <p>Longitude <span style="color:red">*</span></p>
+        <input type="float" name="long" required/>
+        <p>Nome</p>
+        <input type="text" name="name"><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Remover Locais</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Rlocal.php" method="post">
+            <p>Latitude <span style="color:red">*</span></p>
+            <input type="float" name="lat">
+            <p>Longitude <span style="color:red">*</span></p>
+            <input type="float" name="lon"><br><br>
+        <button type="submit">Remover</button>
+    </form>
+</body>

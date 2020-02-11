@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Inserir Anomalia Redacao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ianom.php" method="post">
+        <p>Id<span style="color:red">*</span></p>
+        <input type="integer" name="id" required/>
+        <p>Par de coordenadas 1</p>
+        <input type="integer" name="x1" placeholder="x"/><input type="integer" name="y1" placeholder="y"/>
+        <p>Par de coordenadas 2</p>
+        <input type="int" name="x2" placeholder="x"/><input type="integer" name="y2" placeholder="y"/>
+        <p>Imagem</p>
+        <input type="text" name="img">
+        <p>Lingua</p>
+        <input type="text" name="ling">
+        <p>Data</p>
+        <input type="integer" name="ano" placeholder="Ano"><input type="integer" name="mes" placeholder="Mes"><input type="integer" name="dia" placeholder="Dia"><br>
+        <input type="integer" name="hora" placeholder="Hora"><input type="integer" name="min" placeholder="Minutos"><input type="integer" name="seg" placeholder="Segundos">
+        <p>Descrição</p>
+        <input type="text" name="desc"><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Inserir Anomalia Traducao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ianomtrad.php" method="post">
+        <p>Id<span style="color:red">*</span></p>
+        <input type="integer" name="id" required/>
+        <p>Par de coordenadas 1</p>
+        <input type="integer" name="x1" placeholder="x"/><input type="integer" name="y1" placeholder="y"/>
+        <p>Par de coordenadas 2</p>
+        <input type="int" name="x2" placeholder="x"/><input type="integer" name="y2" placeholder="y"/>
+        <p>Imagem</p>
+        <input type="text" name="img">
+        <p>Lingua</p>
+        <input type="text" name="ling">
+        <p>Data</p>
+        <input type="integer" name="ano" placeholder="Ano"><input type="integer" name="mes" placeholder="Mes"><input type="integer" name="dia" placeholder="Dia"><br>
+        <input type="integer" name="hora" placeholder="Hora"><input type="integer" name="min" placeholder="Minutos"><input type="integer" name="seg" placeholder="Segundos">
+        <p>Descrição</p>
+        <input type="text" name="desc">
+        <p>Par de coordenadas 3</p>
+        <input type="integer" name="x3" placeholder="x"/><input type="integer" name="y3" placeholder="y"/>
+        <p>Par de coordenadas 4</p>
+        <input type="int" name="x4" placeholder="x"/><input type="integer" name="y4" placeholder="y"/>
+        <p>Lingua2</p>
+        <input type="text" name="ling2"><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Remover Anomalia Redacao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ranom.php" method="post">
+            <p>Id</p>
+            <input type="float" name="id"><span style="color:red">*</span><br><br>
+        <button type="submit">Remover</button>
+    </form>
+
+    <h1>Remover Anomalia Traducao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Ranomtrad.php" method="post">
+            <p>Id</p>
+            <input type="float" name="id"><span style="color:red">*</span><br><br>
+        <button type="submit">Remover</button>
+    </form>
+</body>

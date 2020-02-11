@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Listar Anomalias entre Desvios dos ultimos 3 meses.</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+
+    <form action="../php/Lanomts.php">
+        <p>Local Publico</p>
+        <p>Latitude<span style="color:red">*</span></p>
+        <input type="text" name="lat" required>
+        <p>Longitude<span style="color:red">*</span></p>
+        <input type="text" name="lon" required>
+        <p>Desvios</p>
+        <p>Latitude<span style="color:red">*</span></p>
+        <input type="text" name="lat2" required>
+        <p>Longitude<span style="color:red">*</span></p>
+        <input type="text" name="lon2" required><br><br>
+        <button type="submit">See Anomalies</button>
+    </form>
+</body>

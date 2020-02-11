@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Listar Anomalias</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Lanom.php" method="post">
+        <h5>Local Publico 1</h5>
+        <p>Latitude<span style="color:red">*</span></p>
+        <input type="text" name="x1" required>
+        <p>Longitude<span style="color:red">*</span></p>
+        <input type="text" name="y1" required>
+        <h5>Local Publico 2</h5>
+        <p>Latitude<span style="color:red">*</span></p>
+        <input type="text" name="x2" required>
+        <p>Longitude<span style="color:red">*</span></p>
+        <input type="text" name="y2" required><br><br>
+        <button type="submit">Ver Anomalias</button>
+    </form>
+</body>

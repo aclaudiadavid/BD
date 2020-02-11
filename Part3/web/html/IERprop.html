@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Inserir Propostas de Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Iprop.php" method="post">
+        <p>Email <span style="color:red">*</span></p>
+        <input type="text" name="email" required/>
+        <p>nro <span style="color:red">*</span></p>
+        <input type="integer" name="nro" required/>
+        <p>Data</p>
+        <input type="text" name="ano" placeholder="Ano"><input type="text" name="mes" placeholder="Mes"><input type="text" name="dia" placeholder="Dia"><br>
+        <input type="text" name="hora" placeholder="Hora"><input type="text" name="min" placeholder="Minutos"><input type="text" name="seg" placeholder="Segundos">
+        <p>texto</p>
+        <input type="text" name="texto"><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+
+    <h1>Editar Propostas de Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Eprop.php" method="post">
+        <table>
+            <td>
+                <p>Proposta de Correcao</p>
+                <p>Email</p>
+                <input type="text" name="email"><span style="color:red">*</span>
+                <p>nro</p>
+                <input type="integer" name="nro"><span style="color:red">*</span><br><br>
+            </td>
+            <td>
+                <p>Novos valores</p>
+                <p>Data</p>
+                <input type="integer" name="ano" placeholder="Ano"><input type="integer" name="mes" placeholder="Mes"><input type="integer" name="dia" placeholder="Dia"><br>
+                <input type="integer" name="hora" placeholder="Hora"><input type="integer" name="min" placeholder="Minutos"><input type="integer" name="seg" placeholder="Segundos">
+                <p>Texto</p>
+                <input type="text" name="texto">
+            </td>
+        </table>
+        <button type="submit">Editar</button>
+    </form>
+
+    <h1>Remover Propostas de Correcao</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <form action="../php/Rprop.php" method="post">
+            <p>Email</p>
+            <input type="text" name="email"><span style="color:red">*</span>
+            <p>nro</p>
+            <input type="integer" name="nro"><span style="color:red">*</span><br><br>
+        <button type="submit">Remover</button>
+    </form>
+</body>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BD - Proj3</title>
+</head>
+<body>
+    <h1>Registar Duplicado</h1>
+    <h5 style="color:red">* Obrigatorio</h5>
+    <h5>Id Item 1 deve ser menor que Id Item 2</h5>
+    <form action="../php/Rdup.php" method="post">
+        <p>Id Item 1 <span style="color:red">*</span></p>
+        <input type="integer" name="id1" required/>
+        <p>Id Item 2 <span style="color:red">*</span></p>
+        <input type="integer" name="id2" required/><br><br>
+        <button type="submit">Inserir</button>
+    </form>
+</body>
